@@ -6,14 +6,23 @@
 
 
 
-  <ng-template #template let-data let-test > 
+  <ng-template #template let-name="name"> 
     
-    <h1>Hello World {{ test.name }}</h1>
+    <h1>Hello World {{ name }}</h1>
 
   </ng-template>
 
 
   <ng-container #container>
+
+  </ng-container>
+
+
+  <button (click)="loadComponent($event)">Load Home Component</button>
+
+
+  <!-- Home Component -->
+  <ng-container #homecomponent>
 
   </ng-container>
 
